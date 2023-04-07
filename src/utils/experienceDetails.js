@@ -1,0 +1,56 @@
+export const ExperienceDetails = [
+  {
+    title: "Software Developer-3",
+    from: "Jan 2022",
+    to: "Present",
+    companyName: "UST Global",
+    place: "Banglore",
+    state: "Karnataka",
+    achievements: [
+      "Played an Important role to work with open layers map (like google maps) to monitor all T-Mobile's towers data in USA",
+      "Played an Important role to track the logistics through out the world",
+      "Explored Open layers maps, charts, multiple user roles",
+      "Delivered the features in time with optimised and fine tuned code",
+    ],
+    imp: "UST Global Acquired Piktorlabs in Dec 2022, Please consider experience from UST Global and Piktorlabs as a Single Entity",
+  },
+  {
+    title: "Software Engineer (Full Stack)",
+    from: "Dec 2021",
+    to: "Dec 2022",
+    companyName: "Piktorlabs",
+    place: "Banglore",
+    state: "Karnataka",
+    achievements: [
+      "Played an Important role to work with open layers map (like google maps) to monitor all the T-Mobile's towers data in USA",
+      "Played an Important role to track the logistics through out the world",
+      "Explored Open layers maps, charts, multiple user roles",
+      "Delivered the features in time with optimised and fine tuned code",
+    ],
+    imp: "Piktorlabs is acquired by UST Global in Dec 2022, Please consider experience from UST Global and Piktorlabs as a Single Entity",
+  },
+  {
+    title: "Full Stack Software Engineer",
+    from: "Jun 2021",
+    to: "Dec 2022",
+    companyName: "XSEED Education",
+    place: "Chennai",
+    state: "Tamil Nadu",
+    achievements: [
+      "Working in optimisation team where we fix bugs and add additional features for the product",
+      "worked on a tool to where we upload the content to the super teacher app",
+      "Explored the working of push notifications",
+    ],
+  },
+  {
+    title: "Mentor/Tutor",
+    from: "Jun 2021",
+    to: "Dec 2022",
+    companyName: "JB Technologies",
+    place: "Anantapur",
+    state: "Andhra Pradesh",
+    achievements: [
+      "I used to teach MERN stack for the students and I used to clarify doubts on MERN stack.",
+    ],
+  },
+];
