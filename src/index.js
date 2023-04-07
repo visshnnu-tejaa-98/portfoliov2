@@ -4,12 +4,48 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Home from "./components/Home";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Experience from "./components/Experience";
+import { Education } from "./components/Education";
+import { Projects } from "./components/Projects";
+import { Contact } from "./components/Contact";
 
 const appRouter = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    children: [],
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/skills",
+        element: <Skills />,
+      },
+      {
+        path: "/education",
+        element: <Education />,
+      },
+      {
+        path: "/experience",
+        element: <Experience />,
+      },
+      {
+        path: "/projects",
+        element: <Projects />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+    ],
   },
 ]);
 
