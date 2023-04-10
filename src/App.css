@@ -7,3 +7,13 @@
     opacity: 0.2;
   }
 }
+
+.card-gradient {
+  background: rgb(75, 85, 96);
+  background: linear-gradient(
+    0deg,
+    rgba(75, 85, 96, 1) 0%,
+    rgba(31, 41, 55, 0.7) 38%,
+    rgba(0, 212, 255, 0) 48%
+  );
+}

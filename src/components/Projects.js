@@ -20,7 +20,7 @@ export const Projects = () => {
         {ProjectDetails.map((detail) => (
           <div class="col-span-4 flex flex-col items-center text-center lg:col-span-1 lg:items-start lg:text-left">
             <div
-              class="flex h-[350px] w-full flex-col justify-end rounded-[10px] relative overflow-hidden"
+              class="flex h-[400px] w-full flex-col justify-end rounded-[10px] relative overflow-hidden drop-shadow-xl"
               style={{
                 backgroundPosition: "center center",
                 backgroundSize: "cover",
@@ -30,11 +30,11 @@ export const Projects = () => {
               <img
                 src={detail.image}
                 alt="AirMax Pro"
-                class="object-cover w-full h-[350px] rounded-[10px] z-0"
+                class="object-cover w-full h-[400px] rounded-[10px] z-0"
               />
 
-              <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
-              <div class="absolute left-4 bottom-4 text-left">
+              <div class="absolute inset-[-10rem] card-gradient"></div>
+              <div class="absolute left-0 bottom-0 p-4 text-left">
                 <h1 class="text-xl text-white font-semibold">{detail.name}</h1>
                 <p class="text-gray-300 mt-2">{detail.description}</p>
                 <div className="flex justify-between items-center">

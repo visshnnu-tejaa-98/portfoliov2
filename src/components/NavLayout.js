@@ -103,7 +103,7 @@ const NavLayout = () => {
                 <span className="ml-3">Projects</span>
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink
                 to="/contact"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
@@ -111,8 +111,15 @@ const NavLayout = () => {
                 <span class="material-symbols-outlined">call</span>
                 <span className="ml-3">Contact</span>
               </NavLink>
-            </li>
+            </li> */}
           </ul>
+          <div>
+            <i class="fa-brands fa-github text-2xl"></i>
+            <i class="fa-brands fa-instagram text-2xl"></i>
+            <i class="fa-brands fa-twitter text-2xl"></i>
+            <i class="fa-regular fa-envelope text-2xl"></i>
+            <i class="fa-solid fa-phone text-2xl"></i>
+          </div>
         </div>
       </aside>
 
