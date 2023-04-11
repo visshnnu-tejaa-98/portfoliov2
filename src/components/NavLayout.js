@@ -42,7 +42,7 @@ const NavLayout = () => {
         className="fixed top-0 left-0 z-40 w-[20vw] h-screen transition-transform -translate-x-full sm:translate-x-0"
         aria-label="Sidebar"
       >
-        <div className="h-full px-3 py-4 overflow-y-auto bg-[#F5F5F4] dark:bg-gray-800 relative">
+        <div className="h-full px-3 py-4 overflow-y-auto bg-[#F5F5F4] dark:bg-[#192645] relative">
           <div className="flex justify-center">
             <img src={Skills} alt="skills" className="h-[8.5rem] py-3" />
           </div>
