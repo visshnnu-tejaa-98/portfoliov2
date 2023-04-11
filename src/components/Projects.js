@@ -11,9 +11,9 @@ export const Projects = () => {
           title="Projects"
           lightThemeTextColor="#1E293B"
           darkThemeTextColor="#dddddd"
-          lightThemeBlockColor="#9D174D"
-          darkThemeBlockColor="#F9A8D4"
-          blockWidth="150px"
+          lightThemeBlockColor="#7E22CE"
+          darkThemeBlockColor="#C084FC"
+          blockWidth="120px"
         />
       </div>
       <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-7">

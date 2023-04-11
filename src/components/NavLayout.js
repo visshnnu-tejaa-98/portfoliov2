@@ -50,7 +50,12 @@ const NavLayout = () => {
             <li>
               <NavLink
                 to="/"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                // className=""/
+                className={({ isActive }) =>
+                  `flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-[#0F172A] ${
+                    isActive && "text-[#ae37bf] dark:text-[#D946EF] font-bold"
+                  }`
+                }
               >
                 <span className="material-symbols-outlined">home</span>
                 <span className="ml-3">Home</span>
@@ -59,24 +64,24 @@ const NavLayout = () => {
             <li>
               <NavLink
                 to="/about"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                className={({ isActive }) =>
+                  `flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-[#0F172A] ${
+                    isActive && "text-[#CA8A04] dark:text-[#FDE047] font-bold"
+                  }`
+                }
               >
-                <svg
-                  aria-hidden="true"
-                  className="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path>
-                </svg>
+                <span class="material-symbols-outlined">info</span>
                 <span className="flex-1 ml-3 whitespace-nowrap">About</span>
               </NavLink>
             </li>
             <li>
               <NavLink
                 to="/skills"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                className={({ isActive }) =>
+                  `flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-[#0F172A] ${
+                    isActive && "text-[#4D7C0F] dark:text-[#D9F99D] font-bold"
+                  }`
+                }
               >
                 <span className="material-symbols-outlined">code</span>
                 <span className="ml-3">Skills</span>
@@ -85,7 +90,11 @@ const NavLayout = () => {
             <li>
               <NavLink
                 to="/education"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                className={({ isActive }) =>
+                  `flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-[#0F172A] ${
+                    isActive && "text-[#9D174D] dark:text-[#F9A8D4] font-bold"
+                  }`
+                }
               >
                 <span className="material-symbols-outlined">
                   import_contacts
@@ -96,7 +105,11 @@ const NavLayout = () => {
             <li>
               <NavLink
                 to="/experience"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                className={({ isActive }) =>
+                  `flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-[#0F172A] ${
+                    isActive && "text-[#0F766E] dark:text-[#5EEAD4] font-bold"
+                  }`
+                }
               >
                 <span className="material-symbols-outlined">timeline</span>
                 <span className="ml-3">Experience</span>
@@ -105,7 +118,11 @@ const NavLayout = () => {
             <li>
               <NavLink
                 to="/projects"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                className={({ isActive }) =>
+                  `flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-[#0F172A] ${
+                    isActive && "text-[#7E22CE] dark:text-[#C084FC] font-bold"
+                  }`
+                }
               >
                 <span className="material-symbols-outlined">deployed_code</span>
                 <span className="ml-3">Projects</span>
@@ -124,22 +141,22 @@ const NavLayout = () => {
           <div className="absolute bottom-10 w-[90%] mx-auto">
             <div className="flex justify-around items-center text-lg">
               <Link to={githubURL} target="_blank">
-                <i className="fab fa-github hover:scale-110 duration-200 hover:duration-200 cursor-pointer"></i>
+                <i className="fab fa-github hover:scale-110 duration-200 hover:duration-200 cursor-pointer hover:text-[#ae37bf] hover:dark:text-[#D946EF]"></i>
               </Link>
               <Link to={linkedInURL} target="_blank">
-                <i className="fab fa-linkedin-in hover:scale-110 duration-200 hover:duration-200 cursor-pointer"></i>
+                <i className="fab fa-linkedin-in hover:scale-110 duration-200 hover:duration-200 cursor-pointer hover:text-[#CA8A04] hover:dark:text-[#FDE047]"></i>
               </Link>
               <Link to={twitterURL} target="_blank">
-                <i className="fab fa-twitter hover:scale-110 duration-200 hover:duration-200 cursor-pointer"></i>
+                <i className="fab fa-twitter hover:scale-110 duration-200 hover:duration-200 cursor-pointer hover:text-[#4D7C0F] hover:dark:text-[#D9F99D]"></i>
               </Link>
               <Link to={instagram} target="_blank">
-                <i className="fab fa-instagram hover:scale-110 duration-200 hover:duration-200 cursor-pointer"></i>
+                <i className="fab fa-instagram hover:scale-110 duration-200 hover:duration-200 cursor-pointer hover:text-[#9D174D] hover:dark:text-[#F9A8D4]"></i>
               </Link>
               <Link to={""}>
-                <i className="far fa-envelope hover:scale-110 duration-200 hover:duration-200 cursor-pointer"></i>
+                <i className="far fa-envelope hover:scale-110 duration-200 hover:duration-200 cursor-pointer hover:text-[#0F766E] hover:dark:text-[#5EEAD4]"></i>
               </Link>
               <Link to={""}>
-                <i className="fas fa-phone-alt hover:scale-110 duration-200 hover:duration-200 cursor-pointer"></i>
+                <i className="fas fa-phone-alt hover:scale-110 duration-200 hover:duration-200 cursor-pointer hover:text-[#7E22CE] hover:dark:text-[#C084FC]"></i>
               </Link>
             </div>
           </div>

@@ -10,7 +10,7 @@ const Home = () => {
         <h1 className="text-4xl">
           I'm <span className="text-5xl font-semibold">Visshnnu Tejaa</span>
         </h1>
-        <p className="py-3 text-[#cccccc] absolute right-0">
+        <p className="py-3 text-[aaaaaa] dark:text-[#cccccc] absolute right-0">
           -- A Web Developer
         </p>
       </div>
