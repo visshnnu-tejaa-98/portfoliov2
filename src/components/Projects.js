@@ -42,6 +42,7 @@ export const Projects = () => {
                 </h1>
                 <p className="text-gray-300 mt-2">{detail.description}</p>
                 <div>
+                  <span className="text-[12px] text-inherit">Stack Used: </span>
                   {detail.stack.map((item) => (
                     <span className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-md px-1 py-0.5 text-center mr-2 mb-2 text-[10px]">
                       {item}
@@ -49,6 +50,9 @@ export const Projects = () => {
                   ))}
                 </div>
                 <div>
+                  <span className="text-[12px] text-inherit mr-1">
+                    Screen Sizes:
+                  </span>
                   {detail.screenType.map((item) => (
                     <span className="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-md px-1 py-0.5 text-center mr-2 mb-2 text-[10px]">
                       {item}

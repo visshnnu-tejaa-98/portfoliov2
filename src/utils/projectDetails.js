@@ -47,7 +47,7 @@ export const ProjectDetails = [
     name: "Codepencil",
     category: [frontEnd, react],
     description:
-      "This is clone version of codepen, where you can execute HTML, CSS, JavaScript code",
+      "This is codepen clone, where you can execute HTML, CSS, JavaScript code",
     stack: [react, scss],
     screenType: [laptop, desktop],
     image: codepencil,
@@ -90,8 +90,7 @@ export const ProjectDetails = [
   {
     name: "Touch",
     category: [Vanella],
-    description:
-      "This is an application which generates sound and leaves a position where you clicked the screen and vanishes",
+    description: "This is an application which will interacts to your clicks",
     stack: [HTML, CSS, JS],
     screenType: [mobile, tablet, laptop, desktop],
     image: touch,
