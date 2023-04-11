@@ -26,8 +26,8 @@ const Skills = () => {
       </div>
       <div className="block py-10">
         <div className="flex justify-center flex-wrap gap-10 w-[80%] mx-auto">
-          {skills.map((skill) => (
-            <span className=" hover:scale-[1.2] duration-200">
+          {skills.map((skill, idx) => (
+            <span className=" hover:scale-[1.2] duration-200" key={idx}>
               {folioCtx.isDarkTheme
                 ? skill.darkThemeIcon
                 : skill.lightThemeIcon}

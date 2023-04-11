@@ -16,11 +16,14 @@ export const Projects = () => {
           blockWidth="150px"
         />
       </div>
-      <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-5">
-        {ProjectDetails.map((detail) => (
-          <div class="col-span-4 flex flex-col items-center text-center lg:col-span-1 lg:items-start lg:text-left">
+      <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-7">
+        {ProjectDetails.map((detail, idx) => (
+          <div
+            className="col-span-4 flex flex-col items-center text-center lg:col-span-1 lg:items-start lg:text-left"
+            key={idx}
+          >
             <div
-              class="flex h-[400px] w-full flex-col justify-end rounded-[10px] relative overflow-hidden drop-shadow-xl"
+              className="flex h-[400px] w-full flex-col justify-end rounded-[10px] relative overflow-hidden drop-shadow-xl"
               style={{
                 backgroundPosition: "center center",
                 backgroundSize: "cover",
@@ -30,27 +33,29 @@ export const Projects = () => {
               <img
                 src={detail.image}
                 alt="AirMax Pro"
-                class="object-cover w-full h-[400px] rounded-[10px] z-0"
+                className="object-cover w-full h-[400px] rounded-[10px] z-0"
               />
 
-              <div class="absolute inset-[-10rem] card-gradient"></div>
-              <div class="absolute left-0 bottom-0 p-4 text-left">
-                <h1 class="text-xl text-white font-semibold">{detail.name}</h1>
-                <p class="text-gray-300 mt-2">{detail.description}</p>
+              <div className="absolute inset-[-10rem] card-gradient"></div>
+              <div className="absolute left-0 bottom-0 p-4 text-left">
+                <h1 className="text-xl text-white font-semibold">
+                  {detail.name}
+                </h1>
+                <p className="text-gray-300 mt-2">{detail.description}</p>
                 <div className="flex justify-between items-center">
                   <Link
                     to={detail.liveURL}
                     target="_blank"
-                    class="text-base text-white cursor-pointer mt-2 font-semibold"
+                    className="text-base text-white cursor-pointer mt-2 font-semibold"
                   >
                     View →
                   </Link>
                   <Link
                     to={detail.githubURL}
                     target="_blank"
-                    class="text-base text-white cursor-pointer mt-2 mr-4 font-semibold"
+                    className="text-base text-white cursor-pointer mt-2 mr-4 font-semibold"
                   >
-                    <i class="devicon-github-original text-lg"></i>
+                    <i className="devicon-github-original text-lg"></i>
                   </Link>
                 </div>
               </div>

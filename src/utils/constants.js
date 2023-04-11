@@ -18,3 +18,9 @@ export const React = "REACT";
 export const Vanella = "VANELLA_JS";
 export const html = "HTML";
 export const css = "CSS";
+
+export const githubURL = "https://github.com/visshnnu-tejaa-98";
+export const linkedInURL =
+  "https://www.linkedin.com/in/visshnnu-tejaa-60231b1a0/";
+export const twitterURL = "https://twitter.com/Venkattech2";
+export const instagram = "https://www.instagram.com/aspiring_dev/";

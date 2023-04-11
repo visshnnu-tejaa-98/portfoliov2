@@ -1,8 +1,14 @@
 import React, { useContext, useState } from "react";
 import "flowbite";
-import { NavLink, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 import FolioContext from "../contexts/folioContext";
 import Skills from "../assets/skills.png";
+import {
+  githubURL,
+  instagram,
+  linkedInURL,
+  twitterURL,
+} from "../utils/constants";
 
 const NavLayout = () => {
   const folioCtx = useContext(FolioContext);
@@ -24,8 +30,8 @@ const NavLayout = () => {
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            clip-rule="evenodd"
-            fill-rule="evenodd"
+            clipRule="evenodd"
+            fillRule="evenodd"
             d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
           ></path>
         </svg>
@@ -36,7 +42,7 @@ const NavLayout = () => {
         className="fixed top-0 left-0 z-40 w-[20vw] h-screen transition-transform -translate-x-full sm:translate-x-0"
         aria-label="Sidebar"
       >
-        <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+        <div className="h-full px-3 py-4 overflow-y-auto bg-[#F5F5F4] dark:bg-gray-800 relative">
           <div className="flex justify-center">
             <img src={Skills} alt="skills" className="h-[8.5rem] py-3" />
           </div>
@@ -46,7 +52,7 @@ const NavLayout = () => {
                 to="/"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
               >
-                <span class="material-symbols-outlined">home</span>
+                <span className="material-symbols-outlined">home</span>
                 <span className="ml-3">Home</span>
               </NavLink>
             </li>
@@ -72,7 +78,7 @@ const NavLayout = () => {
                 to="/skills"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
               >
-                <span class="material-symbols-outlined">code</span>
+                <span className="material-symbols-outlined">code</span>
                 <span className="ml-3">Skills</span>
               </NavLink>
             </li>
@@ -81,7 +87,9 @@ const NavLayout = () => {
                 to="/education"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
               >
-                <span class="material-symbols-outlined">import_contacts</span>
+                <span className="material-symbols-outlined">
+                  import_contacts
+                </span>
                 <span className="ml-3">Education</span>
               </NavLink>
             </li>
@@ -90,7 +98,7 @@ const NavLayout = () => {
                 to="/experience"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
               >
-                <span class="material-symbols-outlined">timeline</span>
+                <span className="material-symbols-outlined">timeline</span>
                 <span className="ml-3">Experience</span>
               </NavLink>
             </li>
@@ -99,7 +107,7 @@ const NavLayout = () => {
                 to="/projects"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
               >
-                <span class="material-symbols-outlined">deployed_code</span>
+                <span className="material-symbols-outlined">deployed_code</span>
                 <span className="ml-3">Projects</span>
               </NavLink>
             </li>
@@ -108,17 +116,32 @@ const NavLayout = () => {
                 to="/contact"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
               >
-                <span class="material-symbols-outlined">call</span>
+                <span className="material-symbols-outlined">call</span>
                 <span className="ml-3">Contact</span>
               </NavLink>
             </li> */}
           </ul>
-          <div>
-            <i class="fa-brands fa-github text-2xl"></i>
-            <i class="fa-brands fa-instagram text-2xl"></i>
-            <i class="fa-brands fa-twitter text-2xl"></i>
-            <i class="fa-regular fa-envelope text-2xl"></i>
-            <i class="fa-solid fa-phone text-2xl"></i>
+          <div className="absolute bottom-10 w-[90%] mx-auto">
+            <div className="flex justify-around items-center text-lg">
+              <Link to={githubURL} target="_blank">
+                <i className="fab fa-github hover:scale-110 duration-200 hover:duration-200 cursor-pointer"></i>
+              </Link>
+              <Link to={linkedInURL} target="_blank">
+                <i className="fab fa-linkedin-in hover:scale-110 duration-200 hover:duration-200 cursor-pointer"></i>
+              </Link>
+              <Link to={twitterURL} target="_blank">
+                <i className="fab fa-twitter hover:scale-110 duration-200 hover:duration-200 cursor-pointer"></i>
+              </Link>
+              <Link to={instagram} target="_blank">
+                <i className="fab fa-instagram hover:scale-110 duration-200 hover:duration-200 cursor-pointer"></i>
+              </Link>
+              <Link to={""}>
+                <i className="far fa-envelope hover:scale-110 duration-200 hover:duration-200 cursor-pointer"></i>
+              </Link>
+              <Link to={""}>
+                <i className="fas fa-phone-alt hover:scale-110 duration-200 hover:duration-200 cursor-pointer"></i>
+              </Link>
+            </div>
           </div>
         </div>
       </aside>
@@ -133,9 +156,9 @@ const NavLayout = () => {
           onClick={folioCtx.toggleTheme}
         >
           {folioCtx.isDarkTheme ? (
-            <span class="material-symbols-outlined">light_mode</span>
+            <span className="material-symbols-outlined">light_mode</span>
           ) : (
-            <span class="material-symbols-outlined">dark_mode</span>
+            <span className="material-symbols-outlined">dark_mode</span>
           )}
         </div>
       </div>

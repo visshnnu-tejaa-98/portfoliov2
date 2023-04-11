@@ -27,8 +27,8 @@ const EducationDetailCard = ({ detail, lastDetail }) => {
             </p>
           </div>
           <ul className="py-3">
-            {detail.keyHighlights.map((item) => (
-              <li className="flex gap-3">
+            {detail.keyHighlights.map((item, idx) => (
+              <li className="flex gap-3" key={idx}>
                 <span>-</span>
                 <span>{item}</span>
               </li>
