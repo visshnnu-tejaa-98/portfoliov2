@@ -33,27 +33,40 @@ export const Projects = () => {
               <img
                 src={detail.image}
                 alt="AirMax Pro"
-                className="object-cover w-full h-[400px] rounded-[10px] z-0"
+                className="object-cover w-full h-[300px] rounded-[10px] z-0 relative top-[-100px]"
               />
-
               <div className="absolute inset-[-10rem] card-gradient"></div>
               <div className="absolute left-0 bottom-0 p-4 text-left">
                 <h1 className="text-xl text-white font-semibold">
                   {detail.name}
                 </h1>
                 <p className="text-gray-300 mt-2">{detail.description}</p>
+                <div>
+                  {detail.stack.map((item) => (
+                    <span className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-md text-sm px-1 py-0.5 text-center mr-2 mb-2 text-[10px]">
+                      {item}
+                    </span>
+                  ))}
+                </div>
+                <div>
+                  {detail.screenType.map((item) => (
+                    <span className="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-md text-sm px-1 py-0.5 text-center mr-2 mb-2 text-[10px]">
+                      {item}
+                    </span>
+                  ))}
+                </div>
                 <div className="flex justify-between items-center">
                   <Link
                     to={detail.liveURL}
                     target="_blank"
-                    className="text-base text-white cursor-pointer mt-2 font-semibold"
+                    className="text-base text-white cursor-pointer mt-2 font-semibold hover:pl-2 duration-200"
                   >
                     View →
                   </Link>
                   <Link
                     to={detail.githubURL}
                     target="_blank"
-                    className="text-base text-white cursor-pointer mt-2 mr-4 font-semibold"
+                    className="text-base text-white cursor-pointer mt-2 font-semibold"
                   >
                     <i className="devicon-github-original text-lg"></i>
                   </Link>

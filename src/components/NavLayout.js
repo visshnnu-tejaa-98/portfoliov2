@@ -50,7 +50,6 @@ const NavLayout = () => {
             <li>
               <NavLink
                 to="/"
-                // className=""/
                 className={({ isActive }) =>
                   `flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-[#0F172A] ${
                     isActive && "text-[#ae37bf] dark:text-[#D946EF] font-bold"
@@ -70,7 +69,7 @@ const NavLayout = () => {
                   }`
                 }
               >
-                <span class="material-symbols-outlined">info</span>
+                <span className="material-symbols-outlined">info</span>
                 <span className="flex-1 ml-3 whitespace-nowrap">About</span>
               </NavLink>
             </li>
