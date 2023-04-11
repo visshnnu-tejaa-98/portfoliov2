@@ -29,3 +29,34 @@
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* Nav Links */
+
+.home-active {
+  background-color: #d946ef !important;
+  color: #1f2937 !important;
+}
+
+.about-active {
+  background-color: #fde047 !important;
+  color: #1f2937 !important;
+}
+
+.skills-active {
+  background-color: #d9f99d !important;
+  color: #1f2937 !important;
+}
+
+.education-active {
+  background-color: #f9a8d4 !important;
+  color: #1f2937 !important;
+}
+
+.experience-active {
+  background-color: #5eead4 !important;
+  color: #1f2937 !important;
+}
+.projects-active {
+  background-color: #c084fc !important;
+  color: #1f2937 !important;
+}

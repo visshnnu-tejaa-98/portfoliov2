@@ -52,7 +52,7 @@ const NavLayout = () => {
                 to="/"
                 className={({ isActive }) =>
                   `flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-[#0F172A] ${
-                    isActive && "text-[#ae37bf] dark:text-[#D946EF] font-bold"
+                    isActive && "home-active"
                   }`
                 }
               >
@@ -65,7 +65,7 @@ const NavLayout = () => {
                 to="/about"
                 className={({ isActive }) =>
                   `flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-[#0F172A] ${
-                    isActive && "text-[#CA8A04] dark:text-[#FDE047] font-bold"
+                    isActive && "about-active"
                   }`
                 }
               >
@@ -78,7 +78,7 @@ const NavLayout = () => {
                 to="/skills"
                 className={({ isActive }) =>
                   `flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-[#0F172A] ${
-                    isActive && "text-[#4D7C0F] dark:text-[#D9F99D] font-bold"
+                    isActive && "skills-active"
                   }`
                 }
               >
@@ -91,7 +91,7 @@ const NavLayout = () => {
                 to="/education"
                 className={({ isActive }) =>
                   `flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-[#0F172A] ${
-                    isActive && "text-[#9D174D] dark:text-[#F9A8D4] font-bold"
+                    isActive && "education-active"
                   }`
                 }
               >
@@ -106,7 +106,7 @@ const NavLayout = () => {
                 to="/experience"
                 className={({ isActive }) =>
                   `flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-[#0F172A] ${
-                    isActive && "text-[#0F766E] dark:text-[#5EEAD4] font-bold"
+                    isActive && "experience-active"
                   }`
                 }
               >
@@ -119,7 +119,7 @@ const NavLayout = () => {
                 to="/projects"
                 className={({ isActive }) =>
                   `flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-[#0F172A] ${
-                    isActive && "text-[#7E22CE] dark:text-[#C084FC] font-bold"
+                    isActive && "projects-active"
                   }`
                 }
               >
